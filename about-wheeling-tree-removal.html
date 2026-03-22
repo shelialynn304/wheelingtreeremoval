@@ -60,6 +60,49 @@ padding:20px;
 margin-top:40px;
 }
 
+.about-hero {
+  position: relative;
+  background: url("images/about-hero.png") center/cover no-repeat;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.about-hero-content {
+  position: relative;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.about-hero a {
+  display: inline-block;
+  background: #ff9800;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
 </style>
 
 </head>
