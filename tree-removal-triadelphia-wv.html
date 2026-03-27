@@ -1,5 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f7f9;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(135deg, #163a2d, #214d3c);
+  color: #fff;
+  text-align: center;
+  padding: 28px 20px 18px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.top-call {
+  background: #f4b400;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.top-call p {
+  margin: 0 0 10px;
+  color: #111;
+}
+
+.top-call a {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d3f31;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  background: #eef4f1;
+}
+
+.call-btn {
+  background: #1d3f31;
+  color: #fff !important;
+}
+
+.call-btn:hover {
+  background: #2a5a46;
+}
+
+.sticky-call {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 999;
+  background: #f4b400;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 14px 18px;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.hero {
+  position: relative;
+  min-height: 420px;
+  background: url("images/wheeling-bridge-hero.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.52);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 760px;
+  margin: 0 auto 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #163a2d;
+  margin: 0 0 26px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.services .card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #163a2d;
+}
+
+.quote-box {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.contact-top {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact-top a {
+  color: #163a2d;
+  text-decoration: none;
+}
+
+form label {
+  display: block;
+  font-weight: 700;
+  margin: 16px 0 8px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: #f4b400;
+  color: #111;
+}
+
+.btn-primary:hover {
+  background: #ffd24c;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+form .btn-primary {
+  margin-top: 18px;
+  width: 100%;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.areas-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.areas-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.areas-grid li {
+  padding: 8px 0;
+  margin: 0;
+}
+
+.areas-grid a {
+  text-decoration: none;
+  color: #1d3f31;
+  font-weight: 700;
+}
+
+.areas-grid a:hover {
+  text-decoration: underline;
+}
+
+.form-note {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+th {
+  background: #f8f9fa;
+  color: #163a2d;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero {
+    min-height: 360px;
+    padding: 44px 16px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .card,
+  .quote-box {
+    padding: 20px;
+  }
+
+  .sticky-call {
+    right: 12px;
+    bottom: 12px;
+    padding: 12px 16px;
+  }
+}
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
