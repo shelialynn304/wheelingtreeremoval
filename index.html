@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -34,346 +35,8 @@
    ]
   }
   </script>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    header {
-      background: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 22px 20px 18px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      margin: 8px 0 0;
-      font-size: 1rem;
-    }
-
-    .top-call {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .top-call a {
-      display: inline-block;
-      background: #ff3b30;
-      color: white;
-      padding: 18px 35px;
-      font-size: 24px;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-
-    nav {
-      background: #1b5e20;
-      padding: 14px 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,.15);
-    }
-
-    nav a {
-      color: white;
-      font-weight: bold;
-      margin: 0 14px;
-      display: inline-block;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .call-btn {
-      background: #ff9800;
-      padding: 8px 14px;
-      border-radius: 4px;
-    }
-
-    .hero {
-      background:
-        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url("tree-removal-wheeling-wv-chainsaw.jpg");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero-content {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .hero h2 {
-      margin: 0 0 15px;
-      font-size: 2.3rem;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 760px;
-      margin: 0 auto 25px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 25px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 24px;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: bold;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: #ff9800;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #e68900;
-    }
-
-    .btn-secondary {
-      background: white;
-      color: #1b5e20;
-    }
-
-    .btn-secondary:hover {
-      background: #f0f0f0;
-    }
-
-    .sticky-call {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #28a745;
-      color: white;
-      padding: 15px 20px;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 50px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 9999;
-    }
-
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 50px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2rem;
-      color: #1b5e20;
-    }
-
-    .services,
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 25px 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #2e7d32;
-    }
-
-    .highlight-band {
-      background: #e8f5e9;
-      border-top: 1px solid #d6ead8;
-      border-bottom: 1px solid #d6ead8;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 30px;
-      align-items: start;
-    }
-
-    .checklist {
-      padding-left: 20px;
-      margin: 0;
-    }
-
-    .checklist li {
-      margin-bottom: 10px;
-    }
-
-    .areas {
-      background: white;
-      border-radius: 8px;
-      padding: 25px 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      text-align: center;
-    }
-
-    .quote-box {
-      background: white;
-      border-radius: 8px;
-      padding: 30px 24px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact-top {
-      margin-bottom: 18px;
-      font-size: 1.05rem;
-    }
-
-    .contact-top a {
-      color: #1b5e20;
-      font-weight: bold;
-    }
-
-    form label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 6px;
-      margin-top: 14px;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #cfcfcf;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-family: Arial, sans-serif;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    .form-note {
-      font-size: 0.95rem;
-      color: #666;
-      margin-top: 14px;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 26px 20px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 6px 0;
-    }
-
-    @media (max-width: 800px) {
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 80px 20px;
-      }
-
-      .hero h2 {
-        font-size: 1.9rem;
-      }
-
-      nav a {
-        margin: 6px 10px;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .hero h2 {
-        font-size: 1.7rem;
-      }
-
-      .btn {
-        width: 100%;
-        max-width: 320px;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      .top-call a {
-        font-size: 20px;
-        padding: 15px 24px;
-      }
-    }
-
-.areas-grid {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.areas-grid ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.areas-grid li {
-  padding: 6px 0;
-  font-weight: 500;
-}
-  </style>
 </head>
+  
 <body>
 
   <header>
@@ -397,18 +60,19 @@
   </nav>
 
   <a class="sticky-call" href="tel:3045597566">📞 Call Now</a>
+<section class="hero">
+  <div class="hero-content">
+    <h2>Tree Removal in Wheeling, WV</h2>
+    <p>
+      Fast, professional tree removal, stump grinding, and storm cleanup for homeowners in Wheeling and nearby Ohio Valley communities.
+    </p>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Emergency Tree Removal in Wheeling, WV</h2>
-      <p>When a tree falls or becomes dangerous, you need fast, professional help. We provide 24/7 emergency tree removal services in Wheeling, WV and surrounding areas.</p>
-
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="tel:3045597566">Call Now</a>
-        <a class="btn btn-secondary" href="#contact">Get Free Quote</a>
-      </div>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="tel:3045597566">Call Now</a>
+      <a class="btn btn-secondary" href="#contact">Get Free Quote</a>
     </div>
-  </section>
+  </div>
+</section>
 
 <section class="wrap">
   <h2 class="section-title">Common Jobs We Handle</h2>
@@ -494,47 +158,37 @@
 </section>
 
 <section class="wrap">
-  <h2 class="section-title">Areas We Serve</h2>
+  <h2 class="section-title">Tree Removal in Wheeling, WV & Nearby Areas</h2>
 
   <div class="card">
     <p>
       We provide professional tree removal, stump grinding, and emergency tree services
-      throughout Wheeling, WV and surrounding areas in the Ohio Valley. If you're nearby,
-      chances are we can help.
-    </p>
-
-    <p>
-      Our service areas include:
+      throughout Wheeling, WV and surrounding communities in the Ohio Valley.
+      Click your area below to learn more about our local tree services.
     </p>
 
     <div class="areas-grid">
       <ul>
-        <li>Wheeling, WV</li>
-        <li>Triadelphia, WV</li>
-        <li>Bethlehem, WV</li>
-        <li>Warwood, WV</li>
-        <li>Elm Grove, WV</li>
+        <li><a href="tree-removal-wheeling-wv.html">Tree Removal in Wheeling, WV</a></li>
+        <li><a href="tree-removal-triadelphia-wv.html">Tree Removal in Triadelphia, WV</a></li>
+        <li><a href="tree-removal-bethlehem-wv.html">Tree Removal in Bethlehem, WV</a></li>
+        <li><a href="tree-removal-warwood-wv.html">Tree Removal in Warwood, WV</a></li>
+        <li><a href="tree-removal-elm-grove-wv.html">Tree Removal in Elm Grove, WV</a></li>
       </ul>
 
       <ul>
-        <li>Woodsdale, WV</li>
-        <li>Moundsville, WV</li>
-        <li>Glen Dale, WV</li>
-        <li>McMechen, WV</li>
-        <li>Ohio County, WV</li>
+        <li><a href="tree-removal-moundsville-wv.html">Tree Removal in Moundsville, WV</a></li>
+        <li><a href="tree-removal-glen-dale-wv.html">Tree Removal in Glen Dale, WV</a></li>
+        <li><a href="tree-removal-mcmechen-wv.html">Tree Removal in McMechen, WV</a></li>
+        <li><a href="tree-removal-ohio-county-wv.html">Tree Removal in Ohio County, WV</a></li>
       </ul>
     </div>
 
-    <p style="margin-top:15px;">
-      Not sure if you're in our service area? Give us a call and we’ll let you know right away.
+    <p style="margin-top:20px;">
+      Not sure if you're in our service area? Call now and we’ll let you know right away.
     </p>
-
-<li>Tree Removal in Wheeling, WV</li>
-<li>Tree Service in Triadelphia, WV</li>
   </div>
 </section>
-
-
 
 </body>
 </html>
