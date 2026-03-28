@@ -79,16 +79,16 @@
     border-radius: 4px;
   }
 
-  .hero {
-    background:
-      linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
-      url("images/wheeling-bridge-hero.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-  }
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url("images/wheeling-bridge-hero.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
   .hero-content {
     max-width: 900px;
