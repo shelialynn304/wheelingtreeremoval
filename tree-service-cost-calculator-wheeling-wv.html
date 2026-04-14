@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSM0HZXWZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1DSM0HZXWZ');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script defer data-workspace="69b01028d6e4c738cf4abf0f" src="https://cdn.jsdelivr.net/npm/litlyx-js@latest/browser/litlyx.js"></script>
+
+  <title>Tree Service Cost Calculator | Wheeling, WV Estimate Tool</title>
+  <meta name="description" content="Use our tree service cost calculator in Wheeling, WV to get a quick estimate for tree removal, trimming, stump grinding, and storm cleanup." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://wheelingtreeremoval.com/tree-service-cost-calculator-wheeling-wv.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Tree Service Cost Calculator | Wheeling, WV Estimate Tool",
+    "url": "https://wheelingtreeremoval.com/tree-service-cost-calculator-wheeling-wv.html",
+    "description": "Use our tree service cost calculator in Wheeling, WV to estimate tree removal, trimming, stump grinding, and storm cleanup."
+  }
+  </script>
+
+  <style>
+    .calc-hero {
+      position: relative;
+      padding: 55px 20px 25px;
+      overflow: hidden;
+    }
+
+    .calc-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .calc-hero-copy h1 {
+      margin-bottom: 14px;
+    }
+
+    .calc-hero-copy p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 650px;
+    }
+
+    .calc-tree-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calc-tree-wrap img {
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+    }
+
+    .calc-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .calc-main-card,
+    .calc-side-card,
+    .info-card,
+    .example-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
+
+    .calc-main-card h2,
+    .calc-side-card h3,
+    .info-card h2,
+    .info-card h3,
+    .example-card h3 {
+      margin-top: 0;
+    }
+
+    .calc-form label {
+      display: block;
+      font-weight: 700;
+      margin: 14px 0 8px;
+    }
+
+    .calc-form select,
+    .calc-form input[type="text"],
+    .calc-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      color: inherit;
+      box-sizing: border-box;
+    }
+
+    .calc-check {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      font-weight: 600;
+    }
+
+    .calc-btn-row {
+      margin-top: 20px;
+    }
+
+    .calc-btn-row .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .calc-result {
+      display: none;
+      margin-top: 26px;
+      background: linear-gradient(180deg, rgba(255,215,0,0.08) 0%, rgba(255,215,0,0.02) 100%);
+      border: 1px solid rgba(255,215,0,0.3);
+      border-radius: 18px;
+      padding: 26px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    }
+
+    .calc-side-card img {
+      display: block;
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      margin: 10px auto 18px;
+    }
+
+    .calc-side-card ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.7;
+    }
+
+    .info-grid,
+    .example-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .example-card p:last-child,
+    .info-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .example-price {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffd700;
+      margin: 8px 0 10px;
+    }
+
+    .squirrel-section {
+      position: relative;
+    }
+
+    .squirrel-box {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .squirrel-box .text {
+      flex: 1 1 420px;
+    }
+
+    .squirrel-box .art {
+      flex: 0 0 180px;
+      text-align: right;
+    }
+
+    .squirrel-box .art img {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 900px) {
+      .calc-hero-inner,
+      .calc-grid,
+      .info-grid,
+      .example-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .calc-tree-wrap {
+        order: -1;
+      }
+
+      .calc-tree-wrap img {
+        max-width: 190px;
+      }
+
+      .squirrel-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .squirrel-box .art {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Wheeling Tree Removal</h1>
+    <p>Professional Tree Service in Wheeling, WV</p>
+  </header>
+
+  <div class="top-call">
+    <p style="font-size:18px; font-weight:bold;">Fast Response • Free Estimates • Local Wheeling Experts</p>
+    <a href="tel:3045597566">CALL NOW FOR FREE ESTIMATE</a>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about-wheeling-tree-removal.html">About</a>
+    <a href="tree-removal-wheeling-wv.html">Tree Removal</a>
+    <a href="stump-grinding-wheeling-wv.html">Stump Grinding</a>
+    <a href="emergency-tree-removal-wheeling-wv.html">Emergency</a>
+    <a href="#contact">Free Quote</a>
+    <a class="call-btn" href="tel:3045597566">Call Now</a>
+  </nav>
+
+  <a class="sticky-call" href="tel:3045597566">📞 Call Now</a>
+
+  <section class="calc-hero">
+    <div class="calc-hero-inner">
+      <div class="calc-hero-copy">
+        <h1>Tree Service Cost Calculator for Wheeling, WV</h1>
+        <p>
+          Want a rough idea of what your tree job might cost before you call? Use this estimator to get a general range for
+          tree removal, trimming, stump grinding, and storm cleanup in Wheeling and nearby Ohio Valley areas.
+        </p>
+        <p>
+          It is not a final quote, because trees have a nasty habit of turning simple jobs into expensive weirdness once somebody
+          actually looks at them, but it will give you a solid starting point.
+        </p>
+      </div>
+
+      <div class="calc-tree-wrap">
+        <img src="images/tree-service-cost-calculator-wheeling-wv.webp" alt="Cartoon tree holding a calculator with dollar signs">
+      </div>
+    </div>
+  </section>
+
+  <section class="calc-section">
+    <div class="calc-grid">
+      <div class="calc-main-card">
+        <h2>Estimate Your Tree Service Cost</h2>
+        <p>
+          Select the service, tree size, job difficulty, and any extras below. The calculator will return a rough local estimate range.
+        </p>
+
+        <form id="treeCostForm" class="calc-form">
+          <label for="serviceType">Service Type</label>
+          <select id="serviceType" name="serviceType" required>
+            <option value="removal">Tree Removal</option>
+            <option value="trimming">Tree Trimming</option>
+            <option value="stump">Stump Grinding</option>
+            <option value="storm">Storm Cleanup</option>
+          </select>
+
+          <label for="treeSize">Tree Size</label>
+          <select id="treeSize" name="treeSize" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">Extra Large</option>
+          </select>
+
+          <label for="locationRisk">Location / Difficulty</label>
+          <select id="locationRisk" name="locationRisk" required>
+            <option value="open">Open Area / Easy Access</option>
+            <option value="nearFence">Near Fence / Tight Access</option>
+            <option value="nearHouse">Near House / Structure</option>
+            <option value="highRisk">Very Tight / High Risk Area</option>
+          </select>
+
+          <label for="treeCount">How Many Trees / Stumps?</label>
+          <select id="treeCount" name="treeCount" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4+</option>
+          </select>
+
+          <label class="calc-check">
+            <input type="checkbox" id="stumpAddOn" name="stumpAddOn">
+            Include stump grinding
+          </label>
+
+          <label class="calc-check">
+            <input type="checkbox" id="urgentJob" name="urgentJob">
+            Emergency / urgent job
+          </label>
+
+          <div class="calc-btn-row">
+            <button type="submit" class="btn btn-primary">Estimate My Cost</button>
+          </div>
+        </form>
+
+        <div id="calcResult" class="calc-result">
+          <p style="
+            color:#00ff88;
+            font-weight:bold;
+            margin-bottom:6px;
+          ">
+            ✔ Based on local Wheeling pricing
+          </p>
+
+          <p style="
+            font-size:13px;
+            letter-spacing:1px;
+            text-transform:uppercase;
+            opacity:0.8;
+            margin-bottom:6px;
+          ">
+            Estimated Range
+          </p>
+
+          <div id="calcRange" style="
+            font-size:40px;
+            font-weight:900;
+            margin:10px 0 14px;
+            line-height:1.1;
+            color:#ffd700;
+          "></div>
+
+          <p id="calcNote" style="
+            font-size:15px;
+            margin-bottom:16px;
+            line-height:1.5;
+          "></p>
+
+          <div style="
+            font-size:13px;
+            opacity:0.85;
+            margin-bottom:18px;
+          ">
+            Final price depends on tree condition, access, hazards, and cleanup.
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <a href="tel:3045597566" class="btn btn-primary">
+              📞 Call for Exact Quote
+            </a>
+
+            <a href="#contact" style="
+              font-size:13px;
+              text-decoration:none;
+              opacity:0.85;
+            ">
+              or request a quote online →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-side-card">
+        <img src="images/owl-tree-service-expert-wheeling-wv.webp" alt="Cartoon owl tree service expert">
+        <h3>What Changes the Price?</h3>
+        <ul>
+          <li>Tree height and trunk size</li>
+          <li>How close it is to a house or structure</li>
+          <li>Storm damage, cracks, or leaning</li>
+          <li>Cleanup needs and debris hauling</li>
+          <li>Emergency timing</li>
+          <li>Whether stump grinding is included</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-grid">
+    <div class="example-card">
+      <h3>Example Job</h3>
+      <p>Small tree near a driveway with easy access.</p>
+      <div class="example-price">$350 – $650</div>
+      <p>Lower-risk jobs with simpler access usually stay on the lower end.</p>
+    </div>
+
+    <div class="example-card">
+      <h3>Example Job</h3>
+      <p>Large tree near a house with tighter access and more risk.</p>
+      <div class="example-price">$850 – $1,750</div>
+      <p>Bigger trees near structures usually move the range up fast.</p>
+    </div>
+  </section>
+
+  <section class="info-grid">
+    <div class="info-card">
+      <h2>How This Calculator Helps</h2>
+      <p>
+        A lot of people do not call right away because they assume tree work will automatically cost a fortune. Sometimes it does.
+        Sometimes it does not. The point of this page is to give people a real-world ballpark before they pick up the phone.
+      </p>
+      <p>
+        If your tree is close to a house, split from a storm, leaning hard, or hanging over a driveway, expect the price to move up.
+        Safer and easier access usually lowers the range.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h2>Good Estimate. Not Fake Precision.</h2>
+      <p>
+        This is a pricing estimator, not a crystal ball. It gives you a strong general range based on the kind of job you described.
+        The final quote still depends on what the property actually looks like in person.
+      </p>
+      <p>
+        That protects you from guessing blindly, and it protects us from pretending every tree behaves like a neat little spreadsheet entry.
+      </p>
+    </div>
+  </section>
+
+  <section class="calc-section squirrel-section">
+    <div class="info-card squirrel-box">
+      <div class="text">
+        <h2>Want a Better Estimate?</h2>
+        <p>
+          For the best quote, send the address, explain the job, and mention whether the tree is dead, leaning, storm-damaged,
+          over the house, or near a fence or driveway.
+        </p>
+        <p>
+          The more details you give, the better the estimate. Trees, unfortunately, do not come with calm predictable personalities.
+        </p>
+      </div>
+      <div class="art">
+        <img src="images/tree-service-checklist-squirrel-wheeling-wv.webp" alt="Cartoon squirrel with clipboard and hard hat">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="calc-section">
+    <div class="calc-main-card">
+      <h2>Request a Free Quote</h2>
+
+      <form action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST" class="calc-form">
+        <input type="hidden" name="_subject" value="New Calculator Page Lead - Wheeling Tree Removal">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://wheelingtreeremoval.com/thank-you.html">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address">
+
+        <label for="message">Describe the Job</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <div class="calc-btn-row">
+          <button type="submit" class="btn btn-primary">Submit Request</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/tree-cost-calculator.js"></script>
+
+</body>
+</html>
