@@ -202,5 +202,66 @@
   </div>
 </section>
 
+        <!-- Cost Popup -->
+<div id="costPopup" style="
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  max-width:280px;
+  background:#111;
+  color:#fff;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.3);
+  z-index:9999;
+  display:none;
+  font-family:Arial, sans-serif;
+">
+
+  <div style="text-align:right;">
+    <span onclick="closeCostPopup()" style="cursor:pointer; font-weight:bold;">✖</span>
+  </div>
+
+  <p style="font-size:16px; font-weight:bold; margin-bottom:8px;">
+    💰 Tree Service Pricing
+  </p>
+
+  <p style="font-size:14px; margin-bottom:12px;">
+    Not sure what your job will cost?  
+    Use our quick estimator.
+  </p>
+
+  <a href="how-much-does-tree-service-cost-in-wheeling-wv.html"
+     style="
+       display:block;
+       text-align:center;
+       background:#ffd700;
+       color:#000;
+       padding:10px;
+       border-radius:6px;
+       font-weight:bold;
+       text-decoration:none;
+     ">
+     Get My Estimate →
+  </a>
+</div>
+
+<script>
+  // Show popup after delay
+  setTimeout(function() {
+    document.getElementById("costPopup").style.display = "block";
+  }, 4000);
+
+  function closeCostPopup() {
+    document.getElementById("costPopup").style.display = "none";
+    localStorage.setItem("costPopupClosed", "true");
+  }
+
+  // Don’t show again if closed
+  if (localStorage.getItem("costPopupClosed")) {
+    document.getElementById("costPopup").style.display = "none";
+  }
+</script>  
+
 </body>
 </html>
