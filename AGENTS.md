@@ -221,8 +221,8 @@ In order of priority:
 - breaking existing working tracking or forms
 - changing phone numbers, form endpoints, analytics IDs, or canonical domains unless explicitly asked
 
-## Default assumptions for tree-service pages
-Unless told otherwise, new location/service pages should:
+## Default assumptions for tree-service city pages
+Unless told otherwise, new location pages should:
 - link to `style.css`
 - use the standard site nav
 - include a phone CTA near the hero
@@ -237,3 +237,18 @@ If there is a conflict, choose:
 - clarity over cleverness
 - conversion over decoration
 - maintainability over complexity
+
+## Required template usage
+For all new tree-service city pages, start from `template-tree-page.html`.
+
+Do not create a new page from scratch unless explicitly instructed.
+Replace placeholders such as:
+- CITY
+- STATE
+- PAGE-SLUG
+- YOURDOMAIN
+- YOURNUMBER
+- YOUREMAIL@example.com
+- BUSINESS NAME
+
+Keep the overall section order and conversion structure unless explicitly told to change it.
