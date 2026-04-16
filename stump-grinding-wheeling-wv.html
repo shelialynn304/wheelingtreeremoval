@@ -114,7 +114,7 @@ margin-top:40px;
 <a href="index.html">Home</a>
 <a href="tree-removal-wheeling-wv.html">Tree Removal</a>
 <a href="stump-grinding-wheeling-wv.html">Stump Grinding</a>
-<a href="#contact">Free Quote</a>
+<a class="quote-btn" href="#quote">Get Free Quote</a>
 
 </nav>
 
@@ -178,7 +178,8 @@ have one stump or multiple stumps to remove, we can help restore your yard.
 
 <div class="card">
 
-<form action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
+<form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
+<input type="hidden" name="_next" value="https://www.wheelingtreeremoval.com/thank-you.html">
 
 <input type="hidden" name="_subject" value="New Stump Grinding Lead">
 <input type="hidden" name="_captcha" value="false">
@@ -227,5 +228,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script src="tracking.js"></script>
 </body>
 </html>

@@ -89,8 +89,8 @@
       <h1>Tree Removal in Moundsville, WV</h1>
       <p>Fast response, free estimates, and help with dangerous trees, storm cleanup, and stump grinding.</p>
       <div class="hero-buttons">
-        <a class="btn" href="tel:3045597566">Call Now</a>
-        <a class="btn btn-secondary" href="#quote">Get Free Quote</a>
+        <a class="btn call-now-btn" href="tel:3045597566">Call Now</a>
+        <a class="btn btn-secondary quote-btn" href="#quote">Get Free Quote</a>
       </div>
     </div>
   </header>
@@ -102,7 +102,7 @@
       <a href="tree-removal-wheeling-wv.html">Tree Removal</a>
       <a href="stump-grinding-wheeling-wv.html">Stump Grinding</a>
       <a href="emergency-tree-removal-wheeling-wv.html">Emergency</a>
-      <a href="#quote">Free Quote</a>
+      <a class="quote-btn" href="#quote">Get Free Quote</a>
     </div>
   </nav>
 
@@ -248,7 +248,8 @@
       <div class="card">
         <h2>Request a Free Quote</h2>
 
-        <form action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
+        <form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
+<input type="hidden" name="_next" value="https://www.wheelingtreeremoval.com/thank-you.html">
           <input type="hidden" name="_subject" value="New Moundsville Tree Removal Lead">
           <input type="hidden" name="_captcha" value="false">
 
@@ -294,5 +295,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script> 
   
+<script src="tracking.js"></script>
 </body>
 </html>
