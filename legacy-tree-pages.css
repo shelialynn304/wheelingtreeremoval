@@ -1,0 +1,102 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6f5;
+color:#333;
+}
+
+header{
+background:#2e7d32;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:32px;
+}
+
+nav{
+background:#1b5e20;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:#1b5e20;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:34px;
+margin-bottom:10px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:6px;
+box-shadow:0 3px 8px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+button{
+background:#ff9800;
+border:none;
+padding:15px 25px;
+font-size:18px;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.contact{
+background:white;
+padding:30px;
+border-radius:6px;
+box-shadow:0 3px 8px rgba(0,0,0,.1);
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.image-card {
+  max-width: 450px !important;
+  margin: 0 auto;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
