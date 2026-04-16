@@ -249,7 +249,7 @@
 
   <div class="top-call">
     <p style="font-size:18px; font-weight:bold;">Fast Response • Free Estimates • Local Wheeling Experts</p>
-    <a href="tel:3045597566">CALL NOW FOR FREE ESTIMATE</a>
+    <a class="call-now-btn" href="tel:3045597566">Call Now</a>
   </div>
 
   <nav>
@@ -258,11 +258,11 @@
     <a href="tree-removal-wheeling-wv.html">Tree Removal</a>
     <a href="stump-grinding-wheeling-wv.html">Stump Grinding</a>
     <a href="emergency-tree-removal-wheeling-wv.html">Emergency</a>
-    <a href="#contact">Free Quote</a>
-    <a class="call-btn" href="tel:3045597566">Call Now</a>
+    <a class="quote-btn" href="#quote">Get Free Quote</a>
+    <a class="call-btn call-now-btn" href="tel:3045597566">Call Now</a>
   </nav>
 
-  <a class="sticky-call" href="tel:3045597566">📞 Call Now</a>
+  <a class="sticky-call call-now-btn" href="tel:3045597566">Call Now</a>
 
   <section class="calc-hero">
     <div class="calc-hero-inner">
@@ -292,7 +292,8 @@
           Select the service, tree size, job difficulty, and any extras below. The calculator will return a rough local estimate range.
         </p>
 
-        <form id="treeCostForm" class="calc-form">
+        <form id="quote-form" class="calc-form">
+<input type="hidden" name="_next" value="https://www.wheelingtreeremoval.com/thank-you.html">
           <label for="serviceType">Service Type</label>
           <select id="serviceType" name="serviceType" required>
             <option value="removal">Tree Removal</option>
@@ -382,17 +383,13 @@
           </div>
 
           <div style="display:flex; flex-direction:column; gap:10px;">
-            <a href="tel:3045597566" class="btn btn-primary">
-              📞 Call for Exact Quote
-            </a>
+            <a href="tel:3045597566" class="btn btn-primary call-now-btn">Call Now</a>
 
-            <a href="#contact" style="
+            <a class="quote-btn" href="#quote" style="
               font-size:13px;
               text-decoration:none;
               opacity:0.85;
-            ">
-              or request a quote online →
-            </a>
+            ">Get Free Quote</a>
           </div>
         </div>
       </div>
@@ -475,10 +472,10 @@
     <div class="calc-main-card">
       <h2>Request a Free Quote</h2>
 
-      <form action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST" class="calc-form">
+      <form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST" class="calc-form">
         <input type="hidden" name="_subject" value="New Calculator Page Lead - Wheeling Tree Removal">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://wheelingtreeremoval.com/thank-you.html">
+        <input type="hidden" name="_next" value="https://www.wheelingtreeremoval.com/thank-you.html">
 
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -518,5 +515,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script src="tracking.js"></script>
 </body>
 </html>
