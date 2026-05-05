@@ -3,7 +3,7 @@
 <head>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSM0HZXWZ"></script>
+  <script async src="https://googletagmanager.com/gtag/js?id=G-1DSM0HZXWZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -292,8 +292,7 @@
           Select the service, tree size, job difficulty, and any extras below. The calculator will return a rough local estimate range.
         </p>
 
-        <form id="quote-form" class="calc-form">
-<input type="hidden" name="_next" value="https://wheelingtreeremoval.com/thank-you.html">
+        <form id="treeCostForm" class="calc-form">
           <label for="serviceType">Service Type</label>
           <select id="serviceType" name="serviceType" required>
             <option value="removal">Tree Removal</option>
@@ -472,26 +471,26 @@
     <div class="calc-main-card">
       <h2>Request a Free Quote</h2>
 
-      <form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST" class="calc-form">
-        <input type="hidden" name="_subject" value="New Calculator Page Lead - Wheeling Tree Removal">
+      <form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Tree Service Lead">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://wheelingtreeremoval.com/thank-you.html">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_replyto" value="email">
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <label>Name</label>
+        <input type="text" name="name" required>
 
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" name="phone" required>
+        <label>Phone</label>
+        <input type="tel" name="phone" required>
 
-        <label for="address">Address</label>
-        <input type="text" id="address" name="address">
+        <label>Address</label>
+        <input type="text" name="address">
 
-        <label for="message">Describe the Job</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+        <label>Describe the Job</label>
+        <textarea name="message" rows="4"></textarea>
 
-        <div class="calc-btn-row">
-          <button type="submit" class="btn btn-primary">Submit Request</button>
-        </div>
+        <button type="submit">Get Free Quote</button>
       </form>
     </div>
   </section>

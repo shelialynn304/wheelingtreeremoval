@@ -3,7 +3,7 @@
 <head>
   
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSM0HZXWZ"></script>
+<script async src="https://googletagmanager.com/gtag/js?id=G-1DSM0HZXWZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -134,7 +134,6 @@ margin-top:40px;
   </div>
 </section>
 
-
   
 
 <section>
@@ -201,23 +200,26 @@ Triadelphia WV • Moundsville WV • Bethlehem WV • Martins Ferry OH • St C
 <div class="contact">
 
 <form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="New Tree Service Lead">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://wheelingtreeremoval.com/thank-you.html">
 
-<label>Name</label>
-<input type="text" placeholder="Your Name">
+  <input type="hidden" name="_subject" value="New Tree Service Lead">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://wheelingtreeremoval.com/thank-you.html">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_replyto" value="email">
 
-<label>Phone</label>
-<input type="text" placeholder="Phone Number">
+  <label>Name</label>
+  <input type="text" name="name" required>
 
-<label>Address</label>
-<input type="text" placeholder="Job Location">
+  <label>Phone</label>
+  <input type="tel" name="phone" required>
 
-<label>Describe the Tree</label>
-<textarea rows="4" placeholder="Tell us about the tree that needs removed"></textarea>
+  <label>Address</label>
+  <input type="text" name="address">
 
-<button type="submit">Request Quote</button>
+  <label>Describe the Job</label>
+  <textarea name="message" rows="4"></textarea>
+
+  <button type="submit">Get Free Quote</button>
 
 </form>
 
