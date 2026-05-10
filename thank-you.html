@@ -3,25 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Thank You | Wheeling Tree Removal</title>
   <meta name="description" content="Thank you for requesting a free tree service quote. Our Wheeling team will contact you shortly." />
-  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noindex, follow" />
+
   <link rel="stylesheet" href="style.css" />
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://googletagmanager.com/gtag/js?id=G-1DSM0HZXWZ"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSM0HZXWZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+
     gtag('js', new Date());
     gtag('config', 'G-1DSM0HZXWZ');
 
     gtag('event', 'generate_lead', {
+      lead_type: 'quote_form',
+      business: 'tree_service',
       event_category: 'lead',
-      event_label: 'thank_you_page'
+      event_label: 'thank_you_page',
+      page_location: window.location.href
     });
   </script>
 </head>
+
 <body>
   <header>
     <h1>Wheeling Tree Removal</h1>
@@ -34,7 +41,7 @@
     <a href="tree-removal-wheeling-wv.html">Tree Removal</a>
     <a href="stump-grinding-wheeling-wv.html">Stump Grinding</a>
     <a href="emergency-tree-removal-wheeling-wv.html">Emergency</a>
-    <a class="quote-btn" href="#quote">Get Free Quote</a>
+    <a class="quote-btn" href="tree-removal-wheeling-wv.html#quote">Get Free Quote</a>
     <a class="call-now-btn" href="tel:3045597566">Call Now</a>
   </nav>
 
@@ -43,9 +50,11 @@
       <h2>Thank You — We Received Your Request</h2>
       <p>Our team will review your details and contact you shortly to discuss your tree service needs.</p>
       <p>If this is urgent, call now for faster help.</p>
+
       <div class="hero-buttons" style="justify-content:center;">
         <a class="call-now-btn" href="tel:3045597566">Call Now</a>
       </div>
+
       <p style="margin-top: 1rem;">
         <a href="index.html">Back to Homepage</a>
       </p>
