@@ -33,6 +33,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+
+  // ======================
+  // GA4 LEAD CLICK TRACKING
+  // ======================
+  const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+  const quoteButtons = document.querySelectorAll('a[href="#quote"], .quote-btn');
+
+  phoneLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (typeof gtag === "function") {
+        gtag("event", "phone_click", {
+          event_category: "lead",
+          event_label: link.href,
+          lead_type: "phone_call",
+          page_location: window.location.href
+        });
+
+        gtag("event", "generate_lead", {
+          lead_type: "phone_call",
+          page_location: window.location.href
+        });
+      }
+    });
+  });
+
+  quoteButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      if (typeof gtag === "function") {
+        gtag("event", "quote_button_click", {
+          event_category: "lead",
+          event_label: button.textContent.trim(),
+          page_location: window.location.href
+        });
+      }
+    });
+  });
+
   // ======================
   // FORM SUBMISSION TRACKING
   // ======================
