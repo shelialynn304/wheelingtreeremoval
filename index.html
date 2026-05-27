@@ -174,7 +174,7 @@
   </div>
 </section>
   
-<section id="contact" class="wrap">
+<section id="quote" class="wrap">
   <h2 class="section-title">Request a Free Quote</h2>
 
   <div class="quote-box">
@@ -336,25 +336,7 @@
   if (localStorage.getItem("costPopupClosed")) {
     document.getElementById("costPopup").style.display = "none";
   }
-</script>  
-
- <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-
-  phoneLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-      gtag('event', 'phone_click', {
-        event_category: 'lead',
-        event_label: link.getAttribute('href'),
-        page_location: window.location.href,
-        link_text: (link.textContent || '').trim()
-      });
-    });
-  });
-});
 </script>
-          
 <script src="tracking.js"></script>
 </body>
 </html>
