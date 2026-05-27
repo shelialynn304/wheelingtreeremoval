@@ -467,7 +467,7 @@
     </div>
   </section>
 
-  <section id="contact" class="calc-section">
+  <section id="quote" class="calc-section">
     <div class="calc-main-card">
       <h2>Request a Free Quote</h2>
 
@@ -496,24 +496,6 @@
   </section>
 
   <script src="js/tree-cost-calculator.js"></script>
-
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-
-  phoneLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-      gtag('event', 'phone_click', {
-        event_category: 'lead',
-        event_label: link.getAttribute('href'),
-        page_location: window.location.href,
-        link_text: (link.textContent || '').trim()
-      });
-    });
-  });
-});
-</script>
-
 <script src="tracking.js"></script>
 </body>
 </html>
