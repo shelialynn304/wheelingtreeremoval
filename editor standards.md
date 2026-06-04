@@ -119,22 +119,26 @@ Do not encourage homeowners to cut, climb, pull, or move dangerous trees themsel
 
 Every main page should have either:
 
-- A quote form with id="quote", or
+- A quote form with `id="quote-form"`, or
 - A clear CTA linking to a quote form.
 
 Every quote form should preserve this structure unless intentionally changed:
 
+```html
 <form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
+```
 
 Do not break FormSubmit fields.
 
 Recommended hidden fields:
 
+```html
 <input type="hidden" name="_subject" value="New Tree Service Lead">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_next" value="https://wheelingtreeremoval.com/thank-you.html">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_replyto" value="email">
+```
 
 Recommended visible fields:
 
