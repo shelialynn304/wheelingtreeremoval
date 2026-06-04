@@ -79,6 +79,27 @@
     border-radius: 4px;
   }
 
+  .call-now-btn,
+  .quote-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .call-now-btn {
+    background: #ff9800;
+    color: #fff;
+  }
+
+  .quote-btn {
+    background: #fff;
+    color: #1b5e20;
+  }
+
+
 .hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
