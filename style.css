@@ -752,4 +752,20 @@ footer p {
   }
 }
 
+.location-hero-image {
+  max-width: 480px;
+  margin: 28px auto 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+}
+
+.location-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 </style>
