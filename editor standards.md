@@ -125,7 +125,7 @@ Every main page should have either:
 Every quote form should preserve this structure unless intentionally changed:
 
 ```html
-<form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">
+<form id="quote-form" action="https://formsubmit.co/info@wheelingtreeremoval.com" method="POST">
 ```
 
 Do not break FormSubmit fields.

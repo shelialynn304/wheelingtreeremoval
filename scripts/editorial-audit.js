@@ -5,7 +5,7 @@ const path = require('node:path');
 const { execSync } = require('node:child_process');
 
 const rootDir = process.cwd();
-const requiredFormSnippet = '<form id="quote-form" action="https://formsubmit.co/realtorreadyhomeservices@gmail.com" method="POST">';
+const requiredFormSnippet = '<form id="quote-form" action="https://formsubmit.co/info@wheelingtreeremoval.com" method="POST">';
 const forbiddenClaims = [
   'licensed',
   'insured',
@@ -15,7 +15,7 @@ const forbiddenClaims = [
   'locally owned',
   'years of experience',
   'number one',
-  'best',
+  'best tree service',
   'five-star rated',
   'guaranteed lowest price'
 ];
